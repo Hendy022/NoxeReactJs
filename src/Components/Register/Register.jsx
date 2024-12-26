@@ -32,7 +32,7 @@ export default function Register() {
   async function sendRegisterData(values) {
 
     setLoading(true)
-    let { data } = await axios.post('https://route-ecommerce.onrender.com/api/v1/auth/signup', values).catch((err) => {
+    let { data } = await axios.post('https://ecommerce.routemisr.com/api/v1/auth/signup', values).catch((err) => {
       setApiError(err.response.data.message)
       setLoading(false)
     })
